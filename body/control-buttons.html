@@ -1,9 +1,9 @@
 <input name="timeSlide" type="range" min="0" max="1000" value="0" oninput="seek()">
-
-<input name="time" type="text" placeholder="in sec" style="max-width: 100px;">
-<button onclick="seekTo()"> Seek</button> &nbsp;&nbsp;<br>
-
-
+<div style="display: inline-block;">
+    <input name="time" type="text" placeholder="in sec" style="max-width: 100px;">
+    <button onclick="seekTo()"> Seek</button>   
+</div>
+<br>
 <a id="currentTime">0:0:0</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <a onclick="player.playVideo()">|> </a> &nbsp;&nbsp;&nbsp;&nbsp;

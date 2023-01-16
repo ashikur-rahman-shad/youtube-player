@@ -1,3 +1,5 @@
+<?php //require 'backend/session.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +11,7 @@
 
 <body translate="no">
 
+  
 
   <div class="control-buttons" style="background-color: #000;">
     <input name="url" type="text" placeholder="Enter link">

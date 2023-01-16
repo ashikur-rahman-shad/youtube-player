@@ -1,7 +1,9 @@
 * {
-  vertical-align:middle;
+  vertical-align: middle;
+  text-align: center;
 }
- body {
+
+body {
   font-family: sans-serif;
   background-color: #121210;
   color: #fffff5;
@@ -10,6 +12,7 @@
 a {
   cursor: pointer;
 }
+
 input {
   background-color: #121210;
   color: #fffff5;
@@ -35,6 +38,7 @@ button {
   /* No clicking/hover effects */
   pointer-events: none;
 }
+
 .youtube-container iframe {
   /* Extend it beyond the viewport... */
   width: 300%;
@@ -43,6 +47,6 @@ button {
   margin-left: -100%;
 }
 
-.control-buttons{
+.control-buttons {
   text-align: center;
 }
