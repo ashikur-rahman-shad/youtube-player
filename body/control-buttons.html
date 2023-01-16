@@ -1,0 +1,20 @@
+<input name="timeSlide" type="range" min="0" max="1000" value="0" oninput="seek()">
+
+<input name="time" type="text" placeholder="in sec" style="max-width: 100px;">
+<button onclick="seekTo()"> Seek</button> &nbsp;&nbsp;<br>
+
+
+<a id="currentTime">0:0:0</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a onclick="player.playVideo()">|> </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a onclick="player.pauseVideo()">||</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a onclick="player.pauseVideo();player.seekTo(0)">[]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a onclick="seekBackward()">&lt;&lt; </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a onclick="seekForward()">>> </a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+<a onclick="player.unMute()">&lt;) </a> &nbsp;&nbsp;&nbsp;
+<a onclick="player.mute()">&lt;X </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a id="length">0:0:0</a>

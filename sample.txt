@@ -1,0 +1,9 @@
+newState.incident=new Date().toLocaleString(); 
+newState.user="Walid";
+newState.state=1;
+newState.playtime = 1000;
+
+newState.incident=new Date().toLocaleString(); 
+newState.user="Shad";
+newState.state=0;
+newState.playtime = "000;
