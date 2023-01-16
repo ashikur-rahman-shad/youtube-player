@@ -2,8 +2,6 @@ CREATE DATABASE youtube_player;
 
 USE youtube_player;
 
-USE youtube_player;
-
 CREATE TABLE users(
     id 		INT 		PRIMARY KEY AUTO_INCREMENT,
     name 	VARCHAR(20) NOT NULL,
@@ -18,5 +16,6 @@ CREATE TABLE players(
     incident	DATETIME	NOT NULL,
     vid_id		VARCHAR(20)	NOT NULL,
     duration	INT			NOT NULL,
-    state		INT			NOT NULL
+    state		INT			NOT NULL,
+    FOREIGN KEY (owner) REFERENCES users(id) 
 );
