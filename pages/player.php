@@ -5,7 +5,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="styles/general.css">
 </head>
 
 
@@ -26,17 +26,17 @@
       allowfullscreen></iframe>
   </div>
 
-  <div class="control-buttons" load="../body/control-buttons.html"></div>
+  <div class="control-buttons" load="body/control-buttons.html"></div>
 
   <div id="scripts">
     <script src="https://www.youtube.com/player_api"></script>
-    <script src="../scripts/ytPlayer/0.loadScripts.js"></script>
-    <script src="../scripts/ytPlayer/1.globalVariables.js"></script>
-    <script src="../scripts/ytPlayer/2.YtPlayer.js"></script>
-    <script src="../scripts/ytPlayer/3.videoURL.js"></script>
-    <script src="../scripts/ytPlayer/4.seek.js"></script>
-    <script src="../scripts/ytPlayer/5.checkRepeat.js"></script>
-    <script src="../scripts/general/1.fetch.js"></script>
+    <script src="scripts/ytPlayer/0.loadScripts.js"></script>
+    <script src="scripts/ytPlayer/1.globalVariables.js"></script>
+    <script src="scripts/ytPlayer/2.YtPlayer.js"></script>
+    <script src="scripts/ytPlayer/3.videoURL.js"></script>
+    <script src="scripts/ytPlayer/4.seek.js"></script>
+    <script src="scripts/ytPlayer/5.checkRepeat.js"></script>
+    <script src="scripts/general/1.fetch.js"></script>
   </div>
 
 </body>
