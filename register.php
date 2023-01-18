@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
+<?php
+    require 'backend/database/db-connect.php';
 
-<head>
+    require 'backend/register/1.global.php';
+    require 'backend/register/2.validation.php';
+    require 'backend/register/3.print-errors.php';
+    require 'backend/register/4.add-database.php';
 
-</head>
-
-<body>
-
-    <form>
-        
-    </form>
-
-</body>
-
-</html>
+    require 'pages/register.php';

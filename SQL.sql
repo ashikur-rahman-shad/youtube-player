@@ -19,3 +19,4 @@ CREATE TABLE players(
     state		INT			NOT NULL,
     FOREIGN KEY (owner) REFERENCES users(id) 
 );
+

@@ -1,4 +1,5 @@
-<?php //require 'backend/session.php' ?>
+<?php //require 'backend/session.php' 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@
 
 <body translate="no">
 
-  
+
 
   <div class="control-buttons" style="background-color: #000;">
     <input name="url" type="text" placeholder="Enter link">
@@ -19,11 +20,7 @@
   </div>
 
   <div class="youtube-container">
-    <iframe id="video"
-      src="https://www.youtube.com/embed/PEwJ9VIlNgM?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1"
-      title="Video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <iframe id="video" src="https://www.youtube.com/embed/PEwJ9VIlNgM?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div class="control-buttons" load="body/control-buttons.html"></div>
