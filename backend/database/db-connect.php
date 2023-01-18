@@ -23,7 +23,7 @@ function fetch($sql)
 
 }
 
-/* get example
+/* fetch example
 $result = fetch("");
 if (mysqli_num_rows($result) > 0) {
   while ($row = mysqli_fetch_assoc($result)) {
