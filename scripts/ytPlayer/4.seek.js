@@ -1,6 +1,5 @@
 function seek(){
     let time = document.getElementsByName("timeSlide")[0].value;
-    let currentTime=player.getCurrentTime();
     player.seekTo(parseInt(time));
 }
 

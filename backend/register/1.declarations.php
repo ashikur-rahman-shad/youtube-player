@@ -1,4 +1,6 @@
 <?php
+if(isset($_SESSION["email"])) header('Location: ./');
+
 $errorMessages = [];
 
 function error($message)

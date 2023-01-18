@@ -8,7 +8,7 @@
 
 <body>
 
-  <form load="body/reg-form.html" method="post" action=""></form>
+  <form load="body/login-form.html" method="post" action=""></form>
   <div class="error-messages">
     <?php printError(); ?>
   </div>

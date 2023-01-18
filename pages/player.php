@@ -1,6 +1,3 @@
-<?php //require 'backend/session.php' 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +14,7 @@
   <div class="control-buttons" style="background-color: #000;">
     <input name="url" type="text" placeholder="Enter link">
     <button onclick="changeURL()"> Load video</button>
+    <?php session(); ?>
   </div>
 
   <div class="youtube-container">
