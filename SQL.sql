@@ -11,7 +11,7 @@ CREATE TABLE users(
 
 CREATE TABLE players(
     id 			INT 		PRIMARY KEY AUTO_INCREMENT,
-    streamkey	VARCHAR(20) NOT NULL UNIQUE,
+    streamkey	VARCHAR(50) NOT NULL UNIQUE,
     owner 		INT 		NOT NULL,
     incident	DATETIME	NOT NULL,
     vid_id		VARCHAR(20)	NOT NULL,

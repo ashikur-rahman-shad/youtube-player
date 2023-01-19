@@ -1,9 +1,11 @@
 <?php
-    require 'backend/register/session.php';
     require 'backend/database/db-connect.php';
+
+    require 'backend/account/general/1.session.php';
+    require 'backend/account/general/2.declarations.php';
+    require 'backend/account/general/3.print-errors.php';
+    require 'backend/account/general/4.user-id.php';
     
-    require 'backend/register/1.declarations.php';
-    require 'backend/register/3.print-errors.php';
-    require 'backend/register/login.php';
+    require 'backend/account/login/0.login.php';
 
     require 'pages/login.php';

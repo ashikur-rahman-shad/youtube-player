@@ -5,13 +5,14 @@
 
 body {
   font-family: sans-serif;
-  background-color: #121210;
+  background-color: #000;
   color: #fffff5;
 }
 
 a {
   cursor: pointer;
   color: white;
+  text-decoration: none;
 }
 
 input {
@@ -19,8 +20,12 @@ input {
   color: #fffff5;
   border-color: #333;
   border-radius: 5px;
-  width: 100%;
-  max-width: 500px;
+  width: 95%;
+  max-width: 300px;
+  padding: 3px;
+  margin: 5px;
+  font-size: 12pt;
+
 }
 
 button {
@@ -28,6 +33,21 @@ button {
   color: #fffff5;
   border-color: #333;
   border-radius: 5px;
+}
+
+.small-btn {
+  max-width: 100px;
+}
+
+form {
+  width: 99%;
+  max-width: 460px;
+
+  background-color: #151515;
+  border-radius: 5px;
+
+  text-align: right;
+  display: inline-block;
 }
 
 

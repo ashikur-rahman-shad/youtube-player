@@ -3,10 +3,8 @@ function session()
 {
     if (isset($_SESSION['email'])) {
         echo $_SESSION['email'];
-        echo '<form method="post" action="">
-    <input class="small-btn" type="submit" name="logout" value="Log out">
-    </form>';
-        if (isset($_POST['logout'])) {
+        echo '<a href="?logout=1"> logout</a>';
+        if (isset($_GET['logout'])) {
             session_unset();
             session_destroy();
             header('Location: ./');

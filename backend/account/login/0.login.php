@@ -9,11 +9,11 @@ if (
     $email = preg_replace("/\s+/", "", $_POST["email"]);
     $password = $_POST["password"];
 
-    $email_check = fetch("SELECT * FROM users WHERE email = '" . $email . "'and pass = '" . $password . "';");
+    $email_check = sql("SELECT * FROM users WHERE email = '" . $email . "'and pass = '" . $password . "';");
 
     if (mysqli_num_rows($email_check)) {
         $_SESSION["email"] = $email;
-        if(isset($_SESSION["email"])) header('Location: ./');
+        header('Location: ./');
     }
     else error("Incorrect login info. Try again");
 }

@@ -1,23 +1,36 @@
 /* taken from https://codepen.io/adamgreenough/full/bGrgoNb */
 .youtube-container {
-    overflow: hidden;
-    width: 100%;
-    /* Keep it the right aspect-ratio */
-    aspect-ratio: 20/9;
-    /* No clicking/hover effects */
-    pointer-events: none;
-  }
-  
-  .youtube-container iframe {
-    /* Extend it beyond the viewport... */
-    width: 300%;
-    height: 100%;
-    /* ...and bring it back again */
-    margin-left: -100%;
-  }
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 20/9;
+  /* No clicking/hover effects */
+  pointer-events: none;
+}
+
+.youtube-container iframe {
   /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
+}
+
+/* Extend it beyond the viewport... */
 
 
-  .control-buttons {
-    text-align: center;
-  }
+.control-buttons {
+  text-align: center;
+  background-color: #121210;
+}
+
+.top-bar {
+  width: auto;
+  padding: 10px 10px 5px 10px;
+}
+
+.brand-logo {
+  float: left !important;
+  font-size: 20px;
+  font-weight: bold;
+}

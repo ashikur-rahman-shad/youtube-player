@@ -17,7 +17,7 @@ if (
     if (strlen($password) > 25) error("Password too long");
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) error("Invalid email");
-    $email_check = fetch("SELECT * FROM users WHERE email = '" . $email . "';");
+    $email_check = sql("SELECT * FROM users WHERE email = '" . $email . "';");
     if (mysqli_num_rows($email_check) > 0) error("Email already taken. Try something else");
 }
 

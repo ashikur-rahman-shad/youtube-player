@@ -3,18 +3,23 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/0.complete.css">
+  <link rel="stylesheet" href="styles/1.general.css">
+  <link rel="stylesheet" href="styles/2.player.css">
 </head>
 
 
 <body translate="no">
 
+  <div class="top-bar">
+    <span class="brand-logo">Youtube Player</span>
 
+    <span style="float: center;">
+      <input name="url" type="text" placeholder="Enter link">
+      <button onclick="changeURL()"> Load video</button>
 
-  <div class="control-buttons" style="background-color: #000;">
-    <input name="url" type="text" placeholder="Enter link">
-    <button onclick="changeURL()"> Load video</button>
-    <?php session(); ?>
+      <span style="float:right;"> <?php session(); ?> </span>
+    </span>
+
   </div>
 
   <div class="youtube-container">
