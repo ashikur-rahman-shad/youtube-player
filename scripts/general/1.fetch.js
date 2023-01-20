@@ -17,6 +17,18 @@ function fetchContent(to, from){
     })
 }
 
+
+function fetchJson(to, from){
+    let json;
+    fetch(from)
+    .then(result => result.text())
+    .then(data => {
+       json = JSON.parse(data.slice(1,-1));
+       to.innerHTML=json;
+    })
+}
+
+
 //array with all elements
 elements = document.getElementsByTagName("*");
 

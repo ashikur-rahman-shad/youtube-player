@@ -5,6 +5,7 @@ function changeURL() {
     if (url.indexOf("&")>-1)
         url = url.slice(0, url.indexOf("&"));
     player.loadVideoById(url);
-    console.log(url)
+    //console.log(url)
+    update("vidid="+url+"&duration=0");
 }
 //https://www.youtube.com/watch?v=mATzn3YfnUQ

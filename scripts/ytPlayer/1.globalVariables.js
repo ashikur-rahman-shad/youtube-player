@@ -4,10 +4,12 @@ var oldState = { incident: new Date().toLocaleString() };
 
 var newState =
 {
+    owner:0,
     incident: new Date().toLocaleString(),
-    user: "",
-    playtime: 0,
+    vid_id: "PEwJ9VIlNgM",
+    duration: 0,
     state: 1
 };
-
+var fetch_state=document.getElementById("newState");
 const user = "random";
+var data = fetch_state.innerHTML;

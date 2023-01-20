@@ -4,14 +4,14 @@ CREATE DATABASE IF NOT EXISTS youtube_player;
 
 USE youtube_player;
 
-CREATE TABLE users(
+CREATE TABLE IF NOT EXISTS users(
     id 		INT 		PRIMARY KEY AUTO_INCREMENT,
     name 	VARCHAR(20) NOT NULL,
     email 	VARCHAR(20) UNIQUE,
     pass 	VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE players(
+CREATE TABLE IF NOT EXISTS players(
     id 			INT 		PRIMARY KEY AUTO_INCREMENT,
     streamkey	VARCHAR(50) NOT NULL UNIQUE,
     owner 		INT 		NOT NULL,
@@ -27,6 +27,10 @@ CREATE TABLE players(
 
 INSERT INTO users(name, email, pass)
 VALUE('Name','Email','Password');
+
+--SQL to get streamkey
+
+SELECT streamkey FROM players WHERE owner=13
 
 
 --SQL to create a player instance

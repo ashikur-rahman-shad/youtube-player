@@ -10,6 +10,10 @@
 
 <body translate="no">
 
+  <div id="newState" style="display: none;">
+  {"incident":"2023-01-19 18:58:31","vid_id":"PEwJ9VIlNgM","duration":"0","state":"1"}
+  </div>
+
   <div class="top-bar">
     <span class="brand-logo">Youtube Player</span>
 
@@ -29,14 +33,16 @@
   <div class="control-buttons" load="body/control-buttons.html"></div>
 
   <div id="scripts">
+    <script src="scripts/general/1.fetch.js"></script>
     <script src="https://www.youtube.com/player_api"></script>
     <script src="scripts/ytPlayer/0.loadScripts.js"></script>
     <script src="scripts/ytPlayer/1.globalVariables.js"></script>
     <script src="scripts/ytPlayer/2.YtPlayer.js"></script>
-    <script src="scripts/ytPlayer/3.videoURL.js"></script>
-    <script src="scripts/ytPlayer/4.seek.js"></script>
-    <script src="scripts/ytPlayer/5.checkRepeat.js"></script>
-    <script src="scripts/general/1.fetch.js"></script>
+    <script src="scripts/ytPlayer/3.update.js"></script>
+    <script src="scripts/ytPlayer/4.videoURL.js"></script>
+    <script src="scripts/ytPlayer/5.control.js"></script>
+    <script src="scripts/ytPlayer/6.checkRepeat.js"></script>
+    <script src="scripts/ytPlayer/7.copyLink.js"></script>
   </div>
 
 </body>
