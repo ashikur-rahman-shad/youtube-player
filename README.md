@@ -5,5 +5,5 @@ We are calling YouTube API using JavaScript here and syncing states of vidoes in
 For hosting this web app, you need a web server to execute PHP files. 
 
 The player is published in this link:
-https://arstrx.com/yt/?id=20230120165517
+https://arstrx.com/yt
 You may use it or share it with your friends.
