@@ -3,6 +3,6 @@ if (streamkey != "none"){
     linkButton.innerHTML = "Copy link";
     linkButton.onclick = function(){
         navigator.clipboard
-        .writeText(window.location.href+"?id="+streamkey);
+        .writeText(website+"?id="+streamkey);
     }
 }
