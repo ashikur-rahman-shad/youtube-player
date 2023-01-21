@@ -12,12 +12,12 @@ function changeURL() {
 
     else if (url.includes(".be")) {
 
-        url = url.slice(url.indexOf(".be") + 3);
+        url = url.slice(url.indexOf(".be/") + 4);
         if (url.indexOf("?") > -1)
             url = url.slice(0, url.indexOf("?"));
     }
 
-    //console.log(url)
+    console.log(url)
     update("vidid=" + url + "&duration=0");
 }
 //https://www.youtube.com/watch?v=mATzn3YfnUQ
