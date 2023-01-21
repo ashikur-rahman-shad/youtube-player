@@ -1,7 +1,7 @@
 var website="https://arstrx.com/yt/";
 var player, duration, url;
 const play = 1, pause = 2;
-var oldState = { incident: new Date().toLocaleString() };
+var oldState = { incident:  '2023-01-16 08:01:30'};
 
 var newState =
 {
