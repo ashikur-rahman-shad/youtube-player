@@ -4,8 +4,7 @@ function changeURL() {
 
     if (url.includes(".com")) {
 
-        if (url.indexOf("v=") > -1)
-            url = url.slice(url.indexOf("v=") + 2);
+        url = url.slice(url.indexOf("v=") + 2);
         if (url.indexOf("&") > -1)
             url = url.slice(0, url.indexOf("&"));
         player.loadVideoById(url);
@@ -13,8 +12,9 @@ function changeURL() {
 
     else if (url.includes(".be")) {
 
-        if (url.indexOf("v=") > -1)
-            url = url.slice(url.indexOf(".be") + 3);
+        url = url.slice(url.indexOf(".be") + 3);
+        if (url.indexOf("?") > -1)
+            url = url.slice(0, url.indexOf("?"));
     }
 
     //console.log(url)
